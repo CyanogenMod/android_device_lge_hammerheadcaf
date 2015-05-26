@@ -1,10 +1,12 @@
 [
  {
+   "remote": "TeamBliss-Devices",
    "repository": "android_kernel_lge_hammerhead",
-   "branch": "cm-12.1-caf",
-   "target_path": "kernel/lge/hammerhead"
+   "target_path": "kernel/lge/hammerheadcaf",
+   "revision": "cm-12.1-caf"
  },
  {
+   "remote": "cm",
    "repository": "android_device_qcom_common",
    "target_path": "device/qcom/common"
  }
