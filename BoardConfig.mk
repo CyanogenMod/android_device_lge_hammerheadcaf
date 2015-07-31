@@ -111,7 +111,7 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
 # Define kernel config for inline building
 TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
+TARGET_KERNEL_SOURCE := kernel/lge/hammerheadcaf
 
 # SELinux policies
 # QCOM
@@ -181,3 +181,27 @@ BOARD_HARDWARE_CLASS := device/lge/hammerheadcaf/cmhw
 
 # Include an expanded selection of fonts
 EXTENDED_FONT_FOOTPRINT := true
+
+# BlissPop Config Flags
+BLISS_WIPE_CACHES := 0
+TARGET_TC_ROM := 4.9-linaro
+TARGET_TC_KERNEL := 4.9-linaro
+BLISSIFY := true
+BLISS_O3 := true
+BLISS_STRICT := true
+BLISS_GRAPHITE := true
+BLISS_KRAIT := true
+BLISS_PIPE := true
+FLOOP_NEST_OPTIMIZE := true
+ENABLE_GCCONLY := true
+FAST_MATH := true
+ENABLE_MODULAR_O3 := true
+ENABLE_LTO := true
+Link_Time_Optimizations := true
+TARGET_USE_ION_COMPAT := true
+TARGET_USE_KRAIT_PLD_SET := true
+TARGET_GCC_VERSION_EXP := $(TARGET_TC_ROM)
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := $(TARGET_TC_KERNEL)
+
+#SaberMod
+-include vendor/bliss/config/sm.mk

@@ -23,4 +23,16 @@
     <bool name="send_mic_mute_to_AudioManager">true</bool>
     <!-- Show enabled lte option for lte device -->
     <bool name="config_enabled_lte" translatable="false">true</bool>
+    
+    <!-- Show cdma auto network mode in (glabal) roaming -->
+    <integer-array name="config_show_cdma">
+        <item name="slot1">0</item>
+        <item name="slot2">0</item>
+    </integer-array>
+    <!-- Show roaming mode options for slot 1/2-->
+    <integer-array name="config_show_roaming_mode_option">
+        <item name="slot1">0</item>
+        <item name="slot2">0</item>
+    </integer-array>
+    
 </resources>
